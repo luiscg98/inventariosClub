@@ -1,0 +1,102 @@
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="editDevice()">
+  <div class="modal-header text-center">
+    <h4 class="modal-title">Editar equipo</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.close(false)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Nombre"
+                  formControlName="nombre"
+                  [class.is-invalid]="nombreNoValido">
+                </div>
+                <div class="col-2"></div>
+                <div class="col">
+                  <div *ngIf="nombreNoValido" style="color: red; font-size: small;">
+                    Rellena el campo.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Marca"
+                  formControlName="marca"
+                  [class.is-invalid]="marcaNoValido">
+                </div>
+                <div class="col-2"></div>
+                <div class="col">
+                  <div *ngIf="marcaNoValido" style="color: red; font-size: small;">
+                    Rellena el campo.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Modelo"
+                  formControlName="modelo"
+                  [class.is-invalid]="modeloNoValido">
+                </div>
+                <div class="col-2"></div>
+                <div class="col">
+                  <div *ngIf="marcaNoValido" style="color: red; font-size: small;">
+                    Rellena el campo.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Provedor"
+                  formControlName="vendor">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Número de serie"
+                  formControlName="serie">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <input class="form-control"
+                  type="number"
+                  placeholder="Número de artículos"
+                  formControlName="numArticulos">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <input class="form-control"
+                  type="text"
+                  placeholder="Descripción"
+                  formControlName="descripcion">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-block" type="submit">Guardar</button>
+  </div>
+</form>
+
+
+
+

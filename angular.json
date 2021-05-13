@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+           ],
             "outputPath": "dist/frontendclub",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,7 +30,8 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles":[
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "frontendclub"
+  "defaultProject": "frontendclub",
+  "cli": {
+    "analytics": false
+  }
 }

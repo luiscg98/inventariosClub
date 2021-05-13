@@ -1,0 +1,96 @@
+
+.login-inventario{
+    max-width:700px;
+    height:100vh;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.login-inventario .contenedor-frmLogin{
+    background-color:rgba(255,255,255,.8);
+    width:100%;
+    max-width:400px;
+    padding:30px;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+
+
+.login-inventario .contenedor-frmLogin .image-login{
+    width: 100%;
+    display:  block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-inventario .contenedor-frmLogin .image-login img{
+    width: 150px;
+    height: 150px;
+}
+
+label{
+    display: block;
+    color: #009D71;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor-frmLogin input{
+    border: 2px solid #009D71;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+
+.btn-login-inventario{
+    color: #009D71;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: #009D71;
+    padding: 10px 40px 10px 40px;
+    margin-top: 20px;
+    transition: 1es ease all;
+
+}
+
+
+
+.btn-login-inventario:hover{
+
+    color: #fff;
+    background-color: #009D71;
+    border-color: #009D71;
+    padding: 10px 40px 10px 40px;
+    margin-top: 20px;
+
+}
+
+.contenedor-frmLogin .no-llenado p{
+    color: red;
+    padding-top: 10px;
+
+}
+
+
+@media screen and (max-width: 539px){
+  .login-inventario .contenedor-frmLogin{
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .login-inventario .contenedor-frmLogin input{
+    margin-bottom: 30px;
+  }
+  .login-inventario .contenedor-frmLogin img{
+    margin-bottom: 30px;
+  }
+}

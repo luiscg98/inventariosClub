@@ -1,0 +1,149 @@
+.cuerpo{
+  display: inline-block;
+  padding: 10px;
+}
+
+/* imagen de logo */
+
+.logo{
+  display: inline-block;
+  width:70px;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+/* Nombre de la empresa */
+
+.titulo{
+  display: inline-block;
+  width:200px;
+  color: #009575;
+}
+
+.titulo h2{
+  font-size: 20px;
+  font-family: serif;
+}
+
+
+/* botones de accion */
+
+.acciones{
+  display: inline-block;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+/* icono de notificaciones */
+
+.notifica{
+  display: inline-block;
+  width:50px;
+  color: #009575;
+}
+
+.notifica fa-icon{
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+.notifica fa-icon:hover{
+  color: #25bf9e;
+}
+
+/* icono de usuario */
+
+.user{
+  display: inline-block;
+  width:30px;
+  color: #009575;
+}
+
+.user fa-icon{
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+
+.user fa-icon:hover{
+  color: #1bbb98;
+}
+
+.login{
+  display: inline-block;
+  width:30px;
+  color: #009575;
+}
+
+.login i{
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+
+.login i:hover{
+  color: #1bbb98;
+}
+
+.dropdown-menu{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 15px;
+}
+
+.dropdown-menu a{
+  color: #009575;
+}
+
+
+@media screen and (max-width: 539px){
+  .logo{
+      display: inline-block;
+      width:60px;
+  }
+
+  .logo img{
+      width: 40px;
+      height: 40px;
+  }
+
+
+  .titulo{
+      display: inline-block;
+      width:110px;
+      color: #009575;
+  }
+
+  .titulo h2{
+      font-size: 12px;
+      font-family: serif;
+  }
+
+
+  .notifica{
+      display: inline-block;
+      width:30px;
+      color: #009575;
+  }
+
+  .notifica fa-icon{
+      margin-top: 5px;
+      font-size: 18px;
+  }
+
+  .user{
+      display: inline-block;
+      width:30px;
+      color: #009575;
+  }
+
+  .user fa-icon{
+      margin-top: 5px;
+      font-size: 18px;
+  }
+}

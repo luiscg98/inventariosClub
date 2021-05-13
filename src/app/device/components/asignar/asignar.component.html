@@ -1,0 +1,47 @@
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="asignar()">
+  <div class="modal-header">
+    <h4 class="modal-title">Prestamo de equipo</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.close(false)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ng-select
+      placeholder="Selecciona el areá"
+      [items]="defaultBindingsListAreas"
+      (change)="onChange()"
+      [clearable]="false"
+      bindLabel="nombre"
+      bindValue="_id"
+      formControlName="area">
+    </ng-select>
+    <ng-select
+      [items]="defaultBindingsListWorkers"
+      placeholder="Selecciona el trabajador"
+      [clearable]="false"
+      bindLabel="nombre"
+      bindValue="_id"
+      formControlName= "worker">
+    </ng-select>
+    <ng-select
+      [items]="defaultBindingsListUbication"
+      placeholder="Selecciona la ubicación"
+      [clearable]="false"
+      bindLabel="nombre"
+      bindValue="_id"
+      formControlName= "ubication">
+    </ng-select>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+      </div>
+      <textarea formControlName="descripcion" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-dark">ASIGNAR</button>
+  </div>
+</form>
+
+
+

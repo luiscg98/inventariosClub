@@ -1,0 +1,32 @@
+
+<div class="login-inventario">
+    <div class="contenedor-frmLogin">
+        <div class="image-login">
+            <img src="../../../../assets/logo-esmeralda.png">
+        </div>
+
+        <div>
+            <label>Correo electronico</label>
+            <input (keyup.enter)="auth(email.value,password.value)" #email type="email">
+        </div>
+        <div class="mt-2">
+            <label>Contraseña</label>
+            <input (keyup.enter)="auth(email.value, password.value)" #password type="password">
+        </div>
+        <div class="no-llenado">
+            <div *ngIf="alerta == true"><p>*LLENA LOS CAMPOS PARA CONTINUAR</p></div>
+        </div>
+
+        <div class="no-llenado">
+          <div *ngIf="alertacredenciales == true"><p>*CREDENCIALES INCORRECTAS</p></div>
+      </div>
+
+       <div>
+            <button class="btn-login-inventario" (click)="auth(email.value,password.value)">Entrar</button>
+       </div>
+
+
+    </div>
+</div>
+
+

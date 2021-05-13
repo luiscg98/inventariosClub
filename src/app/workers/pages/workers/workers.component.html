@@ -1,0 +1,14 @@
+<div class="row" style="display: flex;">
+  <div class="col-12">
+    <button *ngIf="role=='SUPER_ROLE'" (click)="open()">AGREGAR TRABAJADOR</button>
+  </div>
+  <div *ngFor="let item of workers" class="card col-4" >
+    <img *ngIf="item.nombre!='LAUREANO MIRANDA SEBASTIAN'" class="card-img-top" src="https://pbs.twimg.com/profile_images/1379983763694817282/P_SajK2f_400x400.jpg" alt="Card image cap">
+    <img *ngIf="item.nombre=='LAUREANO MIRANDA SEBASTIAN'" class="card-img-top" src="https://i1.wp.com/bonitoleon.com/content/uploads/2019/11/A-sus-22-a%C3%B1os-leon%C3%A9s-ya-es-fot%C3%B3grafo-oficial-de-la-Selecci%C3%B3n-Mexicana.jpeg?resize=360%2C260&ssl=1" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.nombre}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="javascript:void(0)" [routerLink]="['../workers', item._id]" class="btn btn-primary">VER EQUIPOS</a>
+    </div>
+  </div>
+</div>

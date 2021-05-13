@@ -1,0 +1,52 @@
+.menu a{
+  margin-top: 0px;
+  display: block;
+  padding: 20px;
+  font-family: serif;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.menu a:hover{
+  background-color: #027258;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a i{
+  font-size: 25px;
+}
+
+.active{
+  color: #fcff2d;
+}
+
+@media screen and (max-width: 539px){
+  .menu a{
+      margin-top: 0px;
+      display: block;
+      padding: 5px;
+      font-family: serif;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: #979797;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+  .menu a:hover{
+      background-color: #c0c0c0;
+      color: #fcff2d;
+      border-radius: 15px;
+  }
+
+  .menu a i{
+      margin-top: 3px;
+      font-size: 25px;
+  }
+
+  .menu a span{
+      display: none;
+  }
+}

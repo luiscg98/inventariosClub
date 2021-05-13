@@ -1,1 +1,153 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+body{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.navegador{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 65px;
+}
+
+
+.nav-slide{
+  display: inline-block;
+  background-color: rgb(65, 65, 65);
+  color: #fff;
+  width: 15%;
+  height: calc(100vh - 65px);
+}
+
+.contenido{
+  position: absolute;
+  display: inline-block;
+  width: 85%;
+  height: calc(100vh - 65px);
+}
+
+
+
+@media screen and (max-width: 539px){
+  .navegador{
+      padding-left: 10px;
+      padding-right: 1px;
+      height: 10vh;
+  }
+
+  .nav-slide{
+      display: block;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 7vh;
+  }
+
+  .contenido{
+      width: 100%;
+      height: 83vh;
+  }
+
+  .footer{
+    display: none;
+  }
+}
+
+
+.modal .modal-header{
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: none;
+}
+
+.modal .modal-body{
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.modal-body .imagen{
+  background-color: #ffffff;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal-body img{
+  width: 100px;
+  height: 110px;
+}
+
+.modal-body .formulario{
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.modal-body label{
+  color: #168c6c;
+  font-size: 15px;
+}
+
+.modal-body input{
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.modal-body input::placeholder{
+  color: rgb(196, 196, 196);
+}
+
+.modal-body select{
+  border: none;
+  border-bottom: 3px solid rgba(208, 211, 10, 0.6);
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-footer{
+  background-color: #ffffff;
+  border: none;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.modal-footer button{
+  border-radius: 15px;
+  background-color: green;
+  color: #fff;
+}
+
+.contenedor-paginas{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px 30px;
+
+}
+
+.contenedor-paginas button{
+background-color:#168c6c;
+font-size: 15px;
+border: none;
+border-radius: 5px;
+color: #fff;
+padding: 5px 10px;
+margin-left: 5px;
+
+transition: ease all 3s;
+}
+
+

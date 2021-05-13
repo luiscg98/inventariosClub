@@ -1,0 +1,33 @@
+<div *ngFor="let item of equipos">
+  <h5></h5>
+</div>
+<div class="contenido-tabla">
+  <div class="card">
+    <div class="card-body table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>IMAGEN</th>
+                    <th>PRODUCTO</th>
+                    <th>MARCA</th>
+                    <th>MODELO</th>
+                    <th>NÚMERO DE SERIE</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>ARTÍCULOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of equipos">
+                    <td><img src="../../../../assets/340719-200.png" alt=""></td>
+                    <td> <h5>{{item.nombre}}</h5></td>
+                    <td> <h5>{{item.marca}}</h5></td>
+                    <td> <h5>{{item.modelo}}</h5></td>
+                    <td> <h5>{{item.serie}}</h5></td>
+                    <td> <h5>{{item.descripcion}}</h5></td>
+                    <td> <h5>{{item.numArticulos}}</h5></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

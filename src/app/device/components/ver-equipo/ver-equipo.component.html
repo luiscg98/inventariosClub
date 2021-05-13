@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title">Información completa</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div *ngIf="info!=undefined" class="modal-body">
+  <h5>Nombre: {{info.nombre}}</h5>
+  <h5>Marca: {{info.marca}}</h5>
+  <h5>Modelo: {{info.modelo}}</h5>
+  <h5>Número de serie: {{info.serie}}</h5>
+  <h5>Número de artículos: {{info.numArticulos}}</h5>
+  <h5>Descripción: {{info.descripcion}}</h5>
+  <h5>Encargado: {{info.encargado.nombre}}</h5>
+  <h5>Ubicación: {{info.ubicacion.nombre}}</h5>
+</div>

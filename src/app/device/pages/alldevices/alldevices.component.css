@@ -1,0 +1,58 @@
+
+.contenido-tabla{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
+.card{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.9);
+}
+
+.card .card-header{
+    color: #009975;
+}
+
+.card .card-header button{
+    background-color: #ae288c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.card .card-header button:hover{
+    background-color: #d051b0;
+}
+
+.card-body thead{
+    color: #009975;
+    font-size: 15px;
+}
+
+.card-body tbody img{
+    width: 72px;
+    height: 70px;
+}
+
+/* .card-body tbody{
+    color: #727272;
+} */
+
+.card-body tbody h5{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #828282;
+}
+
+.card-body fa-icon{
+    margin-top: 20px;
+    justify-content: center;
+    color: #009975;
+    font-size: 20px;
+}
+

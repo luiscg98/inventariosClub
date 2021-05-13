@@ -1,0 +1,36 @@
+<div class="cuerpo">
+  <div class="logo">
+      <img [routerLink]="['device']" src="../../../assets//logo-esmeralda.png" alt="">
+  </div>
+
+  <div class="titulo">
+      <h2>LA ESMERALDA</h2>
+  </div>
+
+</div>
+
+<div class="acciones float-right">
+  <div class="notifica dropdown">
+      <fa-icon [icon]="faBell" class="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"></fa-icon>
+      <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+  </div>
+  <div class="user">
+      <fa-icon [icon]="faUser"></fa-icon>
+  </div>
+
+  <div class="login dropdown">
+
+        <fa-icon [icon]="faSortDesc" class="dropdown" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></fa-icon>
+
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Cambiar Contraseña</a>
+          <a class="dropdown-item" href="#">Ver Perfil</a>
+          <a class="dropdown-item" (click)="loguot()">Salir</a>
+        </div>
+  </div>
+</div>
+
